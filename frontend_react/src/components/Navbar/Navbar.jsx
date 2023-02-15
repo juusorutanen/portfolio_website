@@ -53,15 +53,15 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </motion.div> 
             )}
         </div>
         <div className='darkMode'>
           {darkMode ? (
-              <BsFillSunFill className='darkModeOff' onClick={toggle} />
+              <BsSunglasses className='darkModeOff' onClick={toggle} />
               
             ) : (
-              <BsSunglasses className='darkModeOn' onClick={toggle}  />
+              <BsFillSunFill className='darkModeOn' onClick={toggle}  />
             )}
 
             

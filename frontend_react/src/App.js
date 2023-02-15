@@ -17,7 +17,7 @@ const { darkMode } = useContext(DarkModeContext);
 
 
   return (
-  <div className={`theme-${darkMode ? "dark" : "light"}`}>
+  <div className={`theme-${darkMode ? "light" : "dark"}`}>
 
     <div className='app'>   
         
