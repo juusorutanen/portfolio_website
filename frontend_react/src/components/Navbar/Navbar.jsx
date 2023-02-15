@@ -35,27 +35,7 @@ const Navbar = () => {
         
 
 
-        <div className="app__navbar-menu">
-          <HiMenu onClick={() => setToggle2(true)}/>
-
-            {toggle2 && (
-              <motion.div
-                whileInView={{x: [300,0]}}
-                transition={{ duration: 0.85, ease: 'easeOut'}}
-              >
-              <HiX className="hiX"onClick={() => setToggle2(false)} />
-              <ul>
-                {['home', 'work', 'contact'].map((item) => (
-                  <li key={item}>
-                    <a href={`#${item}`} onClick={() => setToggle2(false)}>
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </motion.div> 
-            )}
-        </div>
+        
         <div className='darkMode'>
           {darkMode ? (
               <BsSunglasses className='darkModeOff' onClick={toggle} />

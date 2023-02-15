@@ -95,7 +95,7 @@
         color: white;
         outline: none;
       }
-  
+      
       textarea {
         height: 170px;
       }
@@ -107,29 +107,28 @@
   
     button {
         
-        @include themify ($themes) {
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      border: none;
-      background-color: themed("hover");
+    @include themify ($themes) {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: themed("hover");
   
-      font-weight: 500;
-      color: var(--white-color);
-      outline: none;
-      margin: 2rem 0 0 0;
-      font-family: var(--font-base);
+    font-weight: 500;
+    color: var(--white-color);
+    outline: none;
+    margin: 2rem 0 0 0;
+    font-family: var(--font-base);
   
-      transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-      cursor: pointer;
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
   
-      &:hover {
+    &:hover {
         background-color: #2430af;
-      }
     }
-  
+}
     @media screen and (max-width: 768px) {
-      width: 100%;
-      margin: 1rem 0;
+    width: 100%;
+    margin: 1rem 0;
     }
   }
 }
