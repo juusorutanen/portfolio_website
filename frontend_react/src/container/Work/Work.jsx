@@ -43,7 +43,7 @@ const Work = () => {
   <h2 className="head-text">Work</h2>
 
   <div className="app__work-filter">
-        {['Website design', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['Website design', 'Web App', 'Mobile App', 'ReactJS', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -61,7 +61,7 @@ const Work = () => {
 
         >
           {filterWork.map((work,index) => (
-            <div className='app__work-item app__flex' key={index}>
+            <div className='app__work-item ' key={index}>
               <div className='app__work-img app__flex'>
                 <img src={urlFor(work.imgUrl)} alt={work.name} />
 
