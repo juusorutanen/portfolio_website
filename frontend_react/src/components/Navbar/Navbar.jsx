@@ -1,9 +1,6 @@
 import React, { useState }from 'react';
-import {HiMenu, HiX} from 'react-icons/hi';
 import {BsSunglasses, BsFillSunFill} from 'react-icons/bs';
 
-
-import { motion } from 'framer-motion';
 import './Navbar.scss';
 import { images } from '../../constants';
 import { useContext } from "react";
