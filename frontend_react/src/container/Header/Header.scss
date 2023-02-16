@@ -8,14 +8,15 @@
     padding: 100px 200px 0 200px;
     max-width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
+    
     align-items: center;
     color: themed("color");
     
     gap:50px;    
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 990px) {
         width: 100%;
         padding: 100px 20px 0 20px;
+        flex-wrap: wrap;
         
     }
 }
@@ -86,6 +87,26 @@ span {
         
         
     }
+}
+
+.app__social-mobile {
+    display: flex;
+    gap: 10px;
+    transition: background-color 0.2s ease-in-out;
+    @media screen and (min-width: 500px) {
+        display: none;
+
+    }
+
+    svg {
+        color: white;
+        
+    &:hover {
+        color: var(--green-primary);
+        cursor: pointer;
+    }
+}
+
 }
 
 
