@@ -15,7 +15,7 @@ const Header = () => {
         <h1 className="app__header-text">👋 Hi! I'm Juuso.</h1>
         <h2 className="app__header-text-smaller">I do web development.</h2>
         <p className="app__header-text-paragraph">I'm a recent Business Information Technology graduate and my passion is web development. Currently I'm open to any vacant trainee/junior roles in the field of web development. 
-        At the moment I'm learning React.js and enhancing my knowledge in JavaScript and CSS.</p>
+        At the moment I'm learning React.js and enhancing my knowledge in JavaScript and CSS. I live in Helsinki, Finland.</p>
         <p className="app__header-text-paragraph">Please note that this website is currently <span>very unfinished.</span></p>
         
           <a href="/Projects#projects">
