@@ -5,10 +5,10 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 
 
-import './Work.scss';
+import './Projects.scss';
 
 
-const Work = () => {
+const Projects = () => {
 
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
@@ -40,7 +40,7 @@ const Work = () => {
   };
   return (
     <>
-  <h2 className="head-text">Work</h2>
+  <h2 className="head-text">Projects</h2>
 
   <div className="app__work-filter">
         {['Website design', 'Web App', 'Mobile App', 'ReactJS', 'All'].map((item, index) => (
@@ -117,4 +117,4 @@ const Work = () => {
   )
 }
 
-export default AppWrap(Work, 'work');
+export default AppWrap(Projects, 'projects');

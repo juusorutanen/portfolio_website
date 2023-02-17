@@ -75,6 +75,31 @@ span {
 }
 
 
+
+.app__header-cta-text {
+    color: white;
+    background-color: var(--green-primary);
+    margin-top: 5px;
+    
+    text-decoration: none;
+
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    @media screen and (max-width: 500px) {
+    font-size: 0.85rem;
+    padding:0;
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: var(--green-primary);
+    border-radius: none;
+    
+
+    }
+}
+
 .app__header-image {
     
     img {
@@ -100,11 +125,7 @@ span {
 
     svg {
         color: white;
-        
-    &:hover {
-        color: var(--green-primary);
-        cursor: pointer;
-    }
+    
 }
 
 }
