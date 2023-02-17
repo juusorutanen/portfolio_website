@@ -5,7 +5,7 @@
 
     @include themify($themes) {
     display: flex;
-    padding: 100px 200px 0 200px;
+    padding: 0 200px 0 200px;
     max-width: 100%;
     justify-content: center;
     
@@ -65,7 +65,7 @@ span {
 .app__header-text-paragraph {
  font-size: 1rem;
  font-weight: 200;
- margin-bottom: 5px;
+ margin-bottom: 10px;
 
  @media screen and (max-width: 700px) {
     font-size: 0.85rem;
