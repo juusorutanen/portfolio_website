@@ -32,7 +32,7 @@
       &:hover {
         @include themify ($themes) {
         background-color: themed("textColorSoft");
-        color: themed("textColor");
+        color: themed("color");
       }
     }
   
@@ -44,7 +44,7 @@
   
     .item-active {@include themify ($themes) {
       background-color: themed(hover);
-      color: #fff;
+      color: var(--green-secondary);
     }
   }
 }
