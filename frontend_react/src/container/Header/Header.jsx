@@ -25,14 +25,16 @@ const Header = () => {
           type="button" className="app__header-cta-text"
           >View my projects</motion.button>
           </a>
-     
         <div className='app__social-mobile'>
             <div> <a href="https://github.com/juusorutanen" target="_blank" rel="noopener noreferrer"><BsGithub  /> </a></div>
             <div> <a href="https://www.instagram.com/juusoruta" target="_blank" rel="noopener noreferrer"><BsInstagram /></a></div>
             <div> <a href="https://www.linkedin.com/in/juusorutanen/" target="_blank" rel="noopener noreferrer"><BsLinkedin /></a> </div>
         </div>
       </div>
-      <div className='app__header-image' alt ="profile"><img src={images.profile} alt ="logo"/></div>
+      <div className='person'>
+      <div className='app__header-image2' alt ="profile"><img src={images.background} alt ="logo"/></div>
+      <div className='app__header-image1' alt ="profile"><img src={images.juusoprofilephoto} alt ="Juuso Rutanen"/></div>
+      </div>
     </div>
     
   )

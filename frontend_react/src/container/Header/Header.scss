@@ -130,4 +130,28 @@ span {
 
 }
 
+.person {
+    position: relative;
+
+    img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+}
+
+
+
+.app__header-image1 {
+    position: relative;
+    margin-bottom:20px
+    
+    
+    
+}
+.app__header-image2 {
+    position:absolute;
+    border-radius: 50%;
+}
+
 

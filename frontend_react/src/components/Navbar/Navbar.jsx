@@ -35,10 +35,10 @@ const Navbar = () => {
         
         <div className='darkMode'>
           {darkMode ? (
-              <BsSunglasses className='darkModeOff' onClick={toggle} />
+              <BsFillSunFill className='darkModeOff' onClick={toggle} />
               
             ) : (
-              <BsFillSunFill className='darkModeOn' onClick={toggle}  />
+              <BsSunglasses className='darkModeOn' onClick={toggle}  />
             )}
 
             
