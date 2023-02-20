@@ -18,7 +18,7 @@ const Header = () => {
         At the moment I'm learning React.js and enhancing my knowledge in JavaScript and CSS. I live in Helsinki, Finland.</p>
         <p className="app__header-text-paragraph">Please note that this website is currently <span>very unfinished.</span></p>
         
-          <a href="/#projects">
+          <a href="#projects">
           <motion.button
           whileHover={{scale:1.1}}
           whileTap={{ scale: 0.9}}

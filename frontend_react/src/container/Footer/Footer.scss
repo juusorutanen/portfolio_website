@@ -16,10 +16,10 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 4em 2rem 2rem;
+    margin: 2em 2rem 2rem;
   
     .app__footer-card {
-      min-width: 290px;
+      min-width: 260px;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -34,7 +34,7 @@
       transition: all 0.3s ease-in-out;
   
       img {
-        width: 40px;
+        width: 30px;
         height: 40px;
         margin: 0 0.7rem;
       }
@@ -97,7 +97,8 @@
       }
       
       textarea {
-        height: 170px;
+        height: 150px;
+        resize: none;
       }
   
       &:hover {
@@ -133,6 +134,3 @@
   }
 }
 
-textarea {
-  resize: none;
-}
