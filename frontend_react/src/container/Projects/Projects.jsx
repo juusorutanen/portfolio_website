@@ -117,4 +117,4 @@ const Projects = () => {
   )
 }
 
-export default AppWrap(Projects, 'projects');
+export default AppWrap(MotionWrap(Projects, 'app__works'), 'projects');
