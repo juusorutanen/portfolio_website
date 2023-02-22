@@ -13,10 +13,11 @@
     color: themed("color");
     
     gap:50px;    
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1100px) {
         width: 100%;
         padding: 50px 20px 0 20px;
         flex-wrap: wrap;
+        gap:0px;
         
     }
 }
@@ -99,7 +100,7 @@ span {
 
     }
 }
-
+/* 
 .app__header-image {
     
     img {
@@ -112,7 +113,7 @@ span {
         
         
     }
-}
+} */
 
 .app__social-mobile {
     display: flex;
@@ -130,28 +131,58 @@ span {
 
 }
 
-.person {
+.app__person {
+    display: flex;
     position: relative;
-
+    width: 200px;
+   
+    
     img {
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
+        max-width: 100%;
     }
 }
 
-
-
-.app__header-image1 {
-    position: relative;
-    margin-bottom:20px
+.app__person-container {
     
-    
-    
+    display: flex;
+    align-items: flex-end;
+    aspect-ratio: 1 / 1.5;
+    border-radius: 0 0 100vw 100vw;
+    overflow: hidden;
+    transition: transform 250ms ease-in-out;
 }
-.app__header-image2 {
+
+.app__person-container:hover {
+    transform: scale(1.1);
+}
+
+
+
+.app__person-circle {
+    @include themify($themes) {
     position:absolute;
+    inset: auto 0 0;
+    background-color: themed("color");
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-inline:auto;
+    }
+    
 }
+.app__person-img {
+    position:relative;
+    top:20px;
+    z-index: 2;
+    
+    transition: transform 250ms ease-in-out;
+}
+
+.app__person-container:hover .app__person-img {
+    
+    transform: translateY(-1rem)
+  }
 
 

@@ -31,9 +31,11 @@ const Header = () => {
             <div> <a href="https://www.linkedin.com/in/juusorutanen/" target="_blank" rel="noopener noreferrer"><BsLinkedin /></a> </div>
         </div>
       </div>
-      <div className='person'>
-      <div className='app__header-image2' alt ="profile"><img src={images.background} alt ="logo"/></div>
-      <div className='app__header-image1' alt ="profile"><img src={images.juusoprofilephoto} alt ="Juuso Rutanen"/></div>
+      <div className='app__person'>
+        <div className='app__person-container'>
+          <div className='app__person-circle'></div>
+          <img className='app__person-img' src={images.juusoprofilephoto} alt ="Juuso Rutanen Profile photo"/>
+        </div>
       </div>
     </div>
     
