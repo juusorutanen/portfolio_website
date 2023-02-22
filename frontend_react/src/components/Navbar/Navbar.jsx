@@ -10,11 +10,13 @@ import { DarkModeContext } from "../../context/darkModeContext";
 
 const Navbar = () => {
   const { toggle, darkMode } = useContext(DarkModeContext);
-  const [toggle2, setToggle2] = useState(false);   
+  
   return (
     <nav className="app__navbar">
         <div className="app__navbar-logo">
+        <a href="#home">
             <img src={images.logo} alt ="logo" />
+            </a>
         </div>
         <div className='container'>
         <ul className="app__navbar-links">
@@ -29,10 +31,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        
-
-
-        
         <div className='darkMode'>
           {darkMode ? (
               <BsFillSunFill className='darkModeOff' onClick={toggle} />
@@ -40,9 +38,6 @@ const Navbar = () => {
             ) : (
               <BsSunglasses className='darkModeOn' onClick={toggle}  />
             )}
-
-            
-            
             </div>
         </div>
     </nav>
