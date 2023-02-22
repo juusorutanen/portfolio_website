@@ -9,7 +9,6 @@ import { AppWrap } from '../../wrapper';
 
 const Header = () => {
   return (
-   
     <div className='app__header-container'>
       <div className='app__header-text-container'>
         <h1 className="app__header-text">👋 Hi! I'm Juuso.</h1>
