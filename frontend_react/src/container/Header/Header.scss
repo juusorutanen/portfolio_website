@@ -135,7 +135,6 @@ span {
     display: flex;
     position: relative;
     width: 200px;
-   
     
     img {
         max-width: 100%;
@@ -161,7 +160,6 @@ span {
 .app__person-circle {
     @include themify($themes) {
     position:absolute;
-    inset: auto 0 0;
     background-color: themed("color");
     aspect-ratio: 1 / 1;
     border-radius: 50%;
