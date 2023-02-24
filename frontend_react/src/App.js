@@ -4,7 +4,7 @@ import { About, Footer, Header, Projects} from './container';
 import { Navbar } from './components';
 
 import './App.scss';
-import "./style.scss";
+
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 
@@ -23,6 +23,7 @@ const { darkMode } = useContext(DarkModeContext);
         
         <Navbar />
         <Header />
+        <About />
         <Projects />
         <Footer />
     </div>

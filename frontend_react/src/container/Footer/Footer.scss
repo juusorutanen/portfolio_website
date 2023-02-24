@@ -1,4 +1,4 @@
-@import "../../style.scss";
+@import "../../App.scss";
 
 .app__footer {
     flex: 1;
@@ -121,7 +121,7 @@
     font-family: var(--font-base);
   
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    cursor: pointer;
+    
   
     &:hover {
         background-color: var(--secondary-color);

@@ -9,8 +9,8 @@ import javascript from '../assets/javascript.png';
 import node from '../assets/node.png';
 import react from '../assets/react.png';
 import sass from '../assets/sass.png';
+import cursor from '../assets/cursor.svg';
 
-import background from '../assets/background.png';
 
 
 
@@ -38,5 +38,5 @@ export default {
   juusoprofilephoto,
   circle,
   logo,
-  background,
+  cursor,
 };

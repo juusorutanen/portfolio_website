@@ -40,7 +40,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Send me a message</h2>
+      <h2 className="head-text">Connect with me</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text-secondary">+358 50 404 7512</a>
+          <p className="p-text-secondary">+358 50 404 7512</p>
         </div>
       </div>
       {!isFormSubmitted ? (
@@ -74,6 +74,7 @@ const Footer = () => {
           whileTap={{ scale: 0.9}}
           type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</motion.button>
         </div>
+        
       ) : (
         <div>
           <h3 className="head-text">

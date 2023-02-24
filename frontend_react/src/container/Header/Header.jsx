@@ -9,10 +9,10 @@ import { AppWrap } from '../../wrapper';
 
 const Header = () => {
   return (
-    <div className='app__header-container'>
+    <div className='app__flex app__header-container'>
       <div className='app__header-text-container'>
         <h1 className="app__header-text">👋 Hi! I'm Juuso.</h1>
-        <h2 className="app__header-text-smaller">I do web development.</h2>
+        <h2 className="app__header-text-smaller">I do <span>web development.</span></h2>
         <p className="app__header-text-paragraph">I'm a recent Business Information Technology graduate and my passion is web development. Currently I'm seeking for any vacant trainee/junior roles in the field of web development. 
         At the moment I'm learning React.js and enhancing my knowledge in JavaScript and CSS. I live in Helsinki, Finland.</p>
         <p className="app__header-text-paragraph">Please note that this website is currently <span> unfinished</span> and will be continously updated.</p>

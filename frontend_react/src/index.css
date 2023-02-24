@@ -21,5 +21,17 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  cursor: url("assets/cursor.svg"), default;
+  
 }
+
+
+
+
+
+a, button, svg, .logo, div.app__social > div  {
+  cursor: url("assets/handcursor.svg"), pointer;
+  border:none;
+}
+
 

@@ -1,4 +1,4 @@
-@import "../../style.scss";
+@import "../../App.scss";
 
 .app__works {
     flex: 1;
@@ -7,8 +7,6 @@
   }
   
   .app__work-filter {
- 
-    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,7 +23,7 @@
       color: #000;
       font-weight: 800;
   
-      cursor: pointer;
+      
       transition: all 0.3s ease;
       margin: 0.5rem;
   
@@ -44,7 +42,7 @@
   
     .item-active {@include themify ($themes) {
       background-color: themed(hover);
-      color: var(--green-secondary);
+      color: themed("color");
     }
   }
 }

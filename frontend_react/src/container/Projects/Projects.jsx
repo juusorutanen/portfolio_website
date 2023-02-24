@@ -40,17 +40,17 @@ const Projects = () => {
   };
   return (
     <>
-  <h2 className="head-text">Projects</h2>
+  <h2 className="head-text">Projects &#40;more to come&#41;</h2>
 
   <div className="app__work-filter">
         {['Fullstack', 'Web App', 'Frontend', 'ReactJS', 'All'].map((item, index) => (
-          <div
+          <button
             key={index}
             onClick={() => handleWorkFilter(item)}
             className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
           >
             {item}
-          </div>
+          </button>
         ))}
       </div>
 
@@ -61,7 +61,7 @@ const Projects = () => {
 
         >
           {filterWork.map((work,index) => (
-            <div className='app__work-item ' key={index}>
+            <div className='app__work-item ' type="button" key={index}>
               <div className='app__work-img app__flex'>
                 <img src={urlFor(work.imgUrl)} alt={work.name} />
 

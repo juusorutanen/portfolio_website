@@ -1,23 +1,19 @@
-@import "../../style.scss";
+@import "../../App.scss";
 
 
 .app__header-container {
 
     @include themify($themes) {
-    display: flex;
-    padding: 0 200px 0 200px;
+    padding: 0 10px 0 10px;
     max-width: 100%;
-    justify-content: center;
-    
-    align-items: center;
     color: themed("color");
-    
     gap:50px;    
+    align-items: end;
     @media screen and (max-width: 1100px) {
         width: 100%;
         padding: 50px 20px 0 20px;
         flex-wrap: wrap;
-        gap:0px;
+        gap:5px;
         
     }
 }
@@ -26,7 +22,7 @@
         
     
 span {
-    color: var(--green-secondary);
+    color: var(--green-primary);
 }
 
 
@@ -43,18 +39,23 @@ span {
 
 
 .app__header-text {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 300;
-    display: flex;
-    padding-bottom: 5px;
-    @media screen and (max-width: 900px) {
+    text-align: center;
+    background-color: #162c1b;
+    color:var(--green-primary);
+    padding:5px 2px;
+    width: 30%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    @media screen and (max-width: 1280px) {
         font-size: 1rem;
     }
 }
 
 .app__header-text-smaller {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 500;
     padding-bottom: 10px;
     @media screen and (max-width: 900px) {
         font-size: 1rem;
@@ -87,7 +88,7 @@ span {
     padding: 10px;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
     @media screen and (max-width: 500px) {
     font-size: 0.85rem;
     padding:0;
@@ -100,20 +101,6 @@ span {
 
     }
 }
-/* 
-.app__header-image {
-    
-    img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    }
-    @media screen and (max-width: 900px) {
-        align-self: center;
-        
-        
-    }
-} */
 
 .app__social-mobile {
     display: flex;
@@ -132,12 +119,14 @@ span {
 }
 
 .app__person {
-    display: flex;
     position: relative;
     width: 200px;
     
     img {
         max-width: 100%;
+    }
+    @media screen and (max-width: 500px) {
+        top:-60px;
     }
 }
 
@@ -153,6 +142,8 @@ span {
 
 .app__person-container:hover {
     transform: scale(1.1);
+
+    
 }
 
 
@@ -179,7 +170,6 @@ span {
 }
 
 .app__person-container:hover .app__person-img {
-    
     transform: translateY(-1rem)
   }
 
