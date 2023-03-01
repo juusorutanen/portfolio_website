@@ -11,18 +11,17 @@ const isMobile = window.innerWidth < 768;
 if (!isMobile) {
   boxVariants = {
     whileInViewLeft: {
-      x: [-350, 0],
+      x: [-250, 0],
       opacity: [0, 1],
-      transition: {duration:1.5}
+      transition: {duration:1.3}
     },
     whileInViewRight: {
       x: [250, 0],
       opacity: [0, 1],
-      transition: {duration:1.5}
+      transition: {duration:1.3}
     },
   };
 }
-
 
 const Header = () => {
   return (
