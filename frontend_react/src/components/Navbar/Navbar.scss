@@ -43,10 +43,12 @@
 
 .darkModeOff{
     color: var(--green-primary);
+    cursor: pointer;
 }
 
 .darkModeOn {
     color: black;
+    cursor: pointer;
 }
 
 .app__navbar-links {

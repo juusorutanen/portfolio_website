@@ -19,9 +19,7 @@
         width: 100%;
         padding: 50px 20px 0 20px;
         flex-wrap: wrap;
-        gap:5px;
-        
-        
+        gap:5px; 
     }
 }
 }
@@ -31,14 +29,10 @@
     flex-direction: column;
     gap: 5px;
     width: 70%;
-    
-
     @media screen and (max-width: 900px) {
         width: 100%;
     }
 }
-
-
 
 .app__about-text-paragraph {
     font-size: 1.5rem;
@@ -51,7 +45,7 @@
     @media screen and (max-width: 450px) {
         font-size: 0.85rem;
         line-height: 1.5;
-      }
+}
 }
 
 .app__button-primary {
@@ -81,5 +75,5 @@
     padding: 5px;
 }
 .app__skills-caption {
-   text-align: center;
+    text-align: center;
 }
