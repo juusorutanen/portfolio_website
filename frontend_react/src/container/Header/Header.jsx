@@ -21,12 +21,11 @@ const Header = () => {
         <p className="app__header-text-paragraph">I'm a recent Business Information Technology graduate and my passion is programming. Currently I'm seeking for any vacant trainee/junior roles in the field of software/web development. 
         </p>
         <p className="app__header-text-paragraph">Please note that this website is currently <span> unfinished</span> and will be continously updated.</p>
-          <a href="#about">
+          <a className='app__anchor-tag' href="#about">
           <motion.button
           whileHover={{scale:1.1}}
           whileTap={{ scale: 0.9}}
-          type="button" className="app__button-primary"
-          >More about me</motion.button>
+          type="button" className="app__button-primary" >More about me</motion.button>
           </a>
           
           <div className='app__social-mobile'>
