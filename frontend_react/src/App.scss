@@ -67,11 +67,12 @@ $themes: (
     }
     
   }
+
+
   
   .app__container {
     width: 100%;
     min-height: 100vh;
-  
     display: flex;
     flex-direction: row;
   }
@@ -92,6 +93,19 @@ $themes: (
       padding: 4rem 1rem 2rem 2rem;
     }
   }
+
+  .app__head-text {
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--green-primary);
+    align-self: center;
+    padding: 10px;
+    color: #222;
+    @media screen and (max-width: 450px) {
+      font-size: 1rem;
+    }
+}
 
   .head-text {
     @include themify ($themes){
@@ -253,3 +267,25 @@ $themes: (
       display: none;
     }
   } 
+
+  .app__button-primary {
+  color: white;
+  background-image: linear-gradient(to right, #118a53 0%, #93F9B9  90%, #0acc74  100%);
+  margin-top: 5px;
+  font-size: 1.2rem;
+  background-size: 200% auto;
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+
+  @media screen and (max-width: 500px) {
+  font-size: 0.85rem;
+  padding: 5px;;
+  margin-bottom: 10px;
+  background-color: transparent;
+  }
+}
+
+         
+

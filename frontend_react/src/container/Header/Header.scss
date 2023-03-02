@@ -14,7 +14,7 @@
         padding: 50px 20px 0 20px;
         flex-wrap: wrap;
         gap:5px;
-        
+        text-align: center;
     }
 }
 
@@ -30,8 +30,6 @@ span {
     display: flex;
     flex-direction: column;
     width: 50%;
-    
-
     @media screen and (max-width: 900px) {
         width: 100%;
     }
@@ -39,23 +37,25 @@ span {
 
 
 .app__header-text {
-    font-size: 1.3rem;
+    font-size: 2.8rem;
     font-weight: 300;
     text-align: center;
+    align-self:flex-start;
     background-color: #162c1b;
     color:var(--green-primary);
-    padding:5px 2px;
-    width: 30%;
+    padding:5px 5px;
+    display: inline-block;
     margin-bottom: 1rem;
     border-radius: 10px;
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1100px) {
         font-size: 1rem;
+        align-self: center;
     }
 }
 
 .app__header-text-smaller {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 2.2rem;
+    font-weight: 400;
     padding-bottom: 10px;
     @media screen and (max-width: 900px) {
         font-size: 1rem;
@@ -65,10 +65,9 @@ span {
 }
 
 .app__header-text-paragraph {
- font-size: 1rem;
+ font-size: 1.3rem;
  font-weight: 200;
  margin-bottom: 10px;
-
  @media screen and (max-width: 700px) {
     font-size: 0.85rem;
     line-height: 1.5;
@@ -76,35 +75,11 @@ span {
 }
 }
 
-
-
-.app__header-cta-text {
-    color: white;
-    background-color: var(--green-primary);
-    margin-top: 5px;
-    
-    text-decoration: none;
-
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    /* cursor: pointer; */
-    @media screen and (max-width: 500px) {
-    font-size: 0.85rem;
-    padding:0;
-    text-align: left;
-    margin-bottom: 10px;
-    background-color: transparent;
-    color: var(--green-primary);
-    border-radius: none;
-    
-
-    }
-}
-
 .app__social-mobile {
     display: flex;
+    justify-content: center;
     gap: 10px;
+    z-index: 2;
     @media screen and (min-width: 500px) {
         display: none;
 
@@ -134,15 +109,19 @@ span {
     
     display: flex;
     align-items: flex-end;
-    aspect-ratio: 1 / 1.5;
     border-radius: 0 0 100vw 100vw;
     overflow: hidden;
     transition: transform 250ms ease-in-out;
+    @media screen and (max-width: 500px) {
+        transition: none;
+    }
 }
 
 .app__person-container:hover {
     transform: scale(1.1);
-
+    @media screen and (max-width: 500px) {
+        transform: none;
+    }
     
 }
 
@@ -152,7 +131,6 @@ span {
     @include themify($themes) {
     position:absolute;
     background-color: themed("color");
-    aspect-ratio: 1 / 1;
     border-radius: 50%;
     height: 200px;
     width: 100%;
@@ -167,10 +145,16 @@ span {
     z-index: 2;
     
     transition: transform 250ms ease-in-out;
+    @media screen and (max-width: 500px) {
+        transition: none;
+    }
 }
 
 .app__person-container:hover .app__person-img {
-    transform: translateY(-1rem)
+    transform: translateY(-1rem);
+    @media screen and (max-width: 500px) {
+        transform: none;
+    }
   }
 
 

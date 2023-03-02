@@ -40,7 +40,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Connect with me</h2>
+      <h2 className="app__head-text">CONNECT WITH ME</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -72,7 +72,7 @@ const Footer = () => {
           <motion.button 
           whileHover={{scale:1.1}}
           whileTap={{ scale: 0.9}}
-          type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</motion.button>
+          type="button" className="app__button-primary" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</motion.button>
         </div>
         
       ) : (

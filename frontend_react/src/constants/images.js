@@ -10,6 +10,8 @@ import node from '../assets/node.png';
 import react from '../assets/react.png';
 import sass from '../assets/sass.png';
 import cursor from '../assets/cursor.svg';
+import html5 from '../assets/html5.png';
+
 
 
 
@@ -25,6 +27,7 @@ import juusoprofilephoto from '../assets/juusoprofilephoto.png';
 export default {
   email,
   mobile,
+  html5,
   css,
   figma,
   git,

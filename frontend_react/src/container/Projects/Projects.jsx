@@ -8,6 +8,8 @@ import { urlFor, client } from '../../client';
 import './Projects.scss';
 
 
+
+
 const Projects = () => {
 
   const [works, setWorks] = useState([]);
@@ -40,10 +42,10 @@ const Projects = () => {
   };
   return (
     <>
-  <h2 className="head-text">Projects &#40;more to come&#41;</h2>
+  <h1 className="app__head-text">PROJECTS &#40;MORE TO COME&#41;</h1>
 
   <div className="app__work-filter">
-        {['Fullstack', 'Web App', 'Frontend', 'ReactJS', 'All'].map((item, index) => (
+        {['All','Fullstack', 'Web App', 'Frontend', 'ReactJS'].map((item, index) => (
           <button
             key={index}
             onClick={() => handleWorkFilter(item)}

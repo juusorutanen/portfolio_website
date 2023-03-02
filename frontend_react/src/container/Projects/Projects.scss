@@ -118,6 +118,11 @@
     border-radius: 0.5rem;
     opacity: 0;
     transition: all 0.3s ease;
+
+    @media (hover: none) {
+      opacity: 90%;
+      
+    }
   
     div {
       width: 50px;
@@ -170,3 +175,6 @@
     }
   }
 }
+
+
+   

@@ -34,4 +34,8 @@ a, button, svg, .logo, div.app__social > div  {
   border:none;
 }
 
+a {
+  z-index: 2;
+}
+
 
