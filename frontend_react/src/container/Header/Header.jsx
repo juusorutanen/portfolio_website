@@ -1,5 +1,4 @@
 import React from 'react'
-import { BsGithub, BsInstagram, BsLinkedin} from 'react-icons/bs';
 import { animate, motion } from 'framer-motion';
 import './Header.scss';
 import { images } from '../../constants';
