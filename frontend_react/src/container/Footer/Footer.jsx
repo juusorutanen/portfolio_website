@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { BsGithub, BsInstagram, BsLinkedin} from 'react-icons/bs';
 
-import { images } from '../../constants';
+
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
+import { Map} from '../../components';
 import './Footer.scss';
 
 const Footer = () => {
@@ -40,49 +42,49 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="app__head-text">CONNECT WITH ME</h2>
-
-      <div className="app__footer-cards">
-        <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
-          <a href="mailto:juuso.rutanen@gmail.com" className="p-text-secondary">juuso.rutanen@gmail.com</a>
-        </div>
-        <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
-          <p className="p-text-secondary">+358 50 404 7512</p>
-        </div>
-      </div>
-      {!isFormSubmitted ? (
-        <div className="app__footer-form app__flex">
-          <div className="app__flex">
-            <input className="hover"  type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
-          </div>
-          <div className="app__flex">
-            <input className="hover" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
-          </div>
-          <div>
-            <textarea
+    
+      <div className='app__footer-wrapper'>
+      <h1 className="app__head-text">CONNECT WITH ME</h1>
+      <div className="app__footer">
+        <form className="app__form">
+        <input className="hover"  type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+        <input className="hover" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+        <textarea
               className="hover"
               placeholder="Your Message"
               value={message}
               name="message"
               onChange={handleChangeInput}
             />
-          </div>
-          <motion.button 
+            <motion.button
           whileHover={{scale:1.1}}
           whileTap={{ scale: 0.9}}
-          type="button" className="app__button-primary" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</motion.button>
+          type="button" className="app__anchor-tag" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</motion.button>
+        </form>
+        <div className="app__map">
+        <Map/>
         </div>
+        <footer>
+        <div className='app__social-mobile'>
+            <div> <a href="https://github.com/juusorutanen" target="_blank" rel="noopener noreferrer"><BsGithub  /> </a></div>
+            <div> <a href="https://www.instagram.com/juusoruta" target="_blank" rel="noopener noreferrer"><BsInstagram /></a></div>
+            <div> <a href="https://www.linkedin.com/in/juusorutanen/" target="_blank" rel="noopener noreferrer"><BsLinkedin /></a> </div>
+        </div>
+        </footer>
+       
         
-      ) : (
-        <div>
-          <h3 className="head-text">
-            Thank you! 
-          </h3>
-        </div>
-      )}
+    </div>
+    
+    </div>
+     
+       
+
+        
+      
+
+      
     </>
+   
   );
 };
 

@@ -48,10 +48,6 @@ const About = () => {
           </figure>
           </div>
           </div>
-            
-          
-        
-      
     </div>
   )
 }

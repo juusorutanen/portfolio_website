@@ -1,3 +1,5 @@
+
+
 $themes: (
   light: (
     textColor: white,
@@ -47,7 +49,7 @@ $themes: (
 }
 
 @mixin mobile {
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     @content;
   }
 }
@@ -65,7 +67,6 @@ $themes: (
     background-color: themed("bg");
     color: themed("textColor");
     }
-    
   }
 
 
@@ -81,6 +82,7 @@ $themes: (
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   
   .app__wrapper {
@@ -88,20 +90,20 @@ $themes: (
     width: 100%;
     flex-direction: column;
     padding: 4rem 2rem;
+    
   
     @media screen and (max-width: 450px) {
-      padding: 4rem 2rem 2rem 2rem;
+      padding: 5rem 2rem 4rem 2rem;
     }
   }
 
   .app__head-text {
     text-align: center;
-    display: inline-block;
-    border-radius: 10px;
-    background-color: var(--green-primary);
+    
+   
     align-self: center;
     padding: 10px;
-    color: #222;
+    color: var(--green-primary);
     @media screen and (max-width: 450px) {
       font-size: 1rem;
     }
@@ -174,18 +176,28 @@ $themes: (
 
     @include themify ($themes) {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     flex-direction: column;
-    padding: 1rem;
+    position: fixed;
+    bottom:0px;
+    margin: 0px;
+    padding-left: 2rem;
+    
+
+    .app__vertical-line-left {
+      border-left: 1px solid;
+      color: themed("color");
+      align-self: center;
+      margin-top: 10px;
+      height: 100px;
+    }
 
     @include mobile {
       display:none;
     }
   
     div {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       background-color: themed("color");
       margin: 0.25rem 0;
@@ -227,64 +239,78 @@ $themes: (
     }
   }
 }
+
+
+
+
   
 
-  .app__navigation {
+  .app__rightbar {
+
+    @include themify ($themes) {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    position: fixed;
+    right: 0;
+    bottom:0px;
+    margin: 0px;
+    padding-right: 2rem;
   
-    padding: 1rem;
-  
-    .app__navigation-dot {
-      
-      @include themify ($themes) {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #cbcbcb;
-      margin: 0.5rem;
-      
-      transition: background-color 0.2s ease-in-out;
-  
-      &:hover {
-        background-color: themed("color");
-      }
-  
-      @media screen and (min-width: 2000px) {
-        width: 20px;
-        height: 20px;
-      }  
-      }
+    @include mobile {
+      display:none;
+    }
+    
+
+    .app__rightbar-email {
+      writing-mode: vertical-rl;
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      color: themed("color");  
+    }
+
+    .app__rightbar-email:hover {
+      color: var(--green-primary);
     }
   
+    .app__vertical-line-right  {
+      right: 0;
+      border-left: 1px solid;
+      align-self: center;
+      height: 100px;
+      margin-top: 10px;
+      color: themed("color");
+      
+    }
   }
+}
+
+
+
   
-  @media screen and (max-width: 500px) {
-    .app__navigation,
-    .app__social {
-      display: none;
-    }
-  } 
+
+  
+  
+  
 
   .app__button-primary {
-  color: white;
-  background-image: linear-gradient(to right, #118a53 0%, #93F9B9  90%, #0acc74  100%);
-  margin-top: 5px;
-  font-size: 1.2rem;
-  background-size: 200% auto;
-  text-decoration: none;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+    color: white;
+    background-image: linear-gradient(to right, #118a53 0%, #93F9B9  90%, #0acc74  100%);
+    font-size: 1.2rem;
+    background-size: 200% auto;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
   font-size: 0.85rem;
   padding: 5px;;
   margin-bottom: 10px;
   background-color: transparent;
+  z-index: 3;
   }
 }
  

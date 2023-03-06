@@ -3,6 +3,7 @@ import { BsGithub, BsInstagram, BsLinkedin} from 'react-icons/bs';
 
 const SocialMedia = () => {
     return (
+        
         <div className='app__social'>
             <div>
                 <a href="https://github.com/juusorutanen" target="_blank" rel="noopener noreferrer">
@@ -19,7 +20,12 @@ const SocialMedia = () => {
                 <BsLinkedin />
                 </a>
             </div>
+            <span className='app__vertical-line-left'></span>
         </div>
+       
+        
+        
+        
     )
 }
 
