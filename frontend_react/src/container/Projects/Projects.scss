@@ -18,24 +18,56 @@
   
     .app__work-filter-item {
         
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
+      border-radius: 100rem;
+      padding: 1rem;
+      font-size: 1rem;
+      padding: .5rem 3rem;
       border: none;
-      background-color: var(--green-primary);
-      color: #000;
+      outline: none;
+      position: relative;
+      border-radius: 5px;
+      background: linear-gradient(to right, #00FFA3, #118a53);
+      cursor: pointer;
       font-weight: 500;
       font-family: var(--font-base);
-      cursor: pointer;
-  
-      
+      z-index: 1;
+    
       transition: all 0.3s ease;
       margin: 0.5rem;
-  
-      &:hover {
-        @include themify ($themes) {
-        background-color: themed("textColorSoft");
-        color: themed("color");
+
+        &::before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        background-color: #222;
+        border-radius: 4px;
+        z-index: -1;
+        transition: 200ms;
+      } 
+
+      &::after {
+        content: attr(data);
+        background: linear-gradient(to left, #00FFA3, #118a53);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
       }
+
+      
+  
+      &:hover::before {
+        opacity: 50%;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    &:hover::after {
+      color:white;
     }
   
       @media screen and (min-width: 2000px) {
@@ -44,12 +76,16 @@
       }
     }
   
-    .item-active {@include themify ($themes) {
-      background-color: themed(hover);
-      color: themed("color");
-    }
+    .item-active::before  {
+      background: linear-gradient(to right, #00FFA3, #118a53);
+  }
+
+  .item-active::after {
+    color:white;
   }
 }
+
+
   
   .app__work-portfolio {
     display: flex;
@@ -60,7 +96,7 @@
     .app__work-item {
 
     @include themify ($themes) {
-      width: 270px;
+      width: 300px;
       height: 400px;
       flex-direction: column;
   
@@ -68,9 +104,12 @@
       padding: 1rem;
       border-radius: 0.5rem;
       background-color: themed("color");
+      box-shadow: 0 7px 20px 5px #00000088;
+
       color: #000;
+      
   
-      cursor: pointer;
+      
       transition: all 0.3s ease;
   
       &:hover {
@@ -173,8 +212,10 @@
       position: absolute;
       padding: 0.5rem 1rem;
       border-radius: 10px;
-      background-color: var(--green-secondary);
+      background: linear-gradient(to right, #00FFA3, #118a53);
       top: -25px;
+      color: white;
+      
       
     }
   }

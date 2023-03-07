@@ -99,14 +99,14 @@ span {
     border-radius: 0 0 100vw 100vw;
     overflow: hidden;
     transition: transform 250ms ease-in-out;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
         transition: none;
     }
 }
 
 .app__person-container:hover {
     transform: scale(1.1);
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
         transform: none;
     }
     
@@ -132,14 +132,14 @@ span {
     z-index: 2;
     
     transition: transform 250ms ease-in-out;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
         transition: none;
     }
 }
 
 .app__person-container:hover .app__person-img {
     transform: translateY(-1rem);
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
         transform: none;
     }
   }
@@ -153,6 +153,7 @@ span {
     text-decoration: none;
     color: white;
     background-image: linear-gradient(to right, #118a53 0%, #93F9B9  90%, #0acc74  100%);
+    background-size: 200% auto;
     font-size: 1.2rem;
     border: none;
     
@@ -162,7 +163,6 @@ span {
         z-index: 3;
         font-size: 0.85rem;
         width: 50%;
-       
     }
   }
 
