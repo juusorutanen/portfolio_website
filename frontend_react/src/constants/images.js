@@ -3,13 +3,12 @@ import mobile from '../assets/mobile.svg';
 import css from '../assets/css.png';
 import figma from '../assets/figma.png';
 import git from '../assets/git.png';
-import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
 import node from '../assets/node.png';
 import react from '../assets/react.png';
 import sass from '../assets/sass.png';
-import cursor from '../assets/cursor.svg';
+import photoshop from '../assets/photoshop.png';
 import html5 from '../assets/html5.png';
 
 
@@ -31,7 +30,6 @@ export default {
   css,
   figma,
   git,
-  graphql,
   html,
   javascript,
   node,
@@ -41,5 +39,5 @@ export default {
   juusoprofilephoto,
   circle,
   logo,
-  cursor,
+  photoshop
 };

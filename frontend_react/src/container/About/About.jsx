@@ -17,9 +17,8 @@ const About = () => {
         <span> In my spare time I enjoy building websites/apps and generally improve my web development skills. </span>
         Ultimately, I’m a developer because I am always excited to learn. I’d love the opportunity to apply my knowledge in a professional setting and learn from others. 
         When I'm not learning I enjoy playing videogames, photography, and throwing frisbees into small cages (mostly trees). </p>
-          
           </div>
-          
+
         <div className='app__skills-container'>
         <h2 className='app__head-text'>TOOLS</h2>
         <div className='app__skill-wrapper2'>
@@ -46,6 +45,10 @@ const About = () => {
           <figure className='app__skill-wrapper'>
             <img className='app__skill-image' src={images.sass} alt ="Sass"/>
             <figcaption className='app__skills-caption'>Sass</figcaption>
+          </figure>
+          <figure className='app__skill-wrapper'>
+            <img className='app__skill-image' src={images.photoshop} alt ="Photoshop"/>
+            <figcaption className='app__skills-caption'>Photoshop</figcaption>
           </figure>
           </div>
           </div>

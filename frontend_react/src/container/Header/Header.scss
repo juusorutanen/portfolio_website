@@ -146,9 +146,9 @@ span {
 
   
   .app__anchor-tag{
-    z-index: 3;
-    width: 32%;
+    width: 10rem;
     text-align: center;
+    font-weight: 200;
     padding: 10px;
     text-decoration: none;
     color: white;
@@ -157,12 +157,14 @@ span {
     font-size: 1.2rem;
     border: none;
     
+    
     cursor: pointer;
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 990px) {
         z-index: 3;
+        width: 8rem;
         font-size: 0.85rem;
-        width: 50%;
+        
     }
   }
 
