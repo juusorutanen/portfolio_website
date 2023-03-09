@@ -14,19 +14,14 @@ const Footer = () => {
     <>
     
       <div className='app__footer-wrapper'>
-        
       <h1 className="app__head-text">CONNECT WITH ME</h1>
-      
-      
       <div className="app__footer">
-     
         <form 
-        name="contact v1"
-        method='post'
+        name="contact"
+        method="POST"
         data-netlify="true"
         onSubmit="submit"
         className="app__form">
-        <input type="hidden" name="form-name" value="contact v1"/>
         <input className="hover"  type="text" placeholder="Your Name" name="name" />
         <input className="hover" type="email" placeholder="Your Email" name="email"   />
         <textarea

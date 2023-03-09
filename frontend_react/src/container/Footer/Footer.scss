@@ -36,6 +36,7 @@
         width: 100%;
         padding: 0.95rem;
         margin-bottom: 1rem;
+        margin-top: 5px;
         border: none;
         border-radius: 7px;
         background-color: var(--primary-color);
@@ -82,4 +83,11 @@
   }
   .app__anchor-tag {
     font-family: var(--font-base);
+  }
+
+  label {
+    color:white;
+    font-family: var(--font-base);
+    font-size: 0.85rem;
+    
   }
