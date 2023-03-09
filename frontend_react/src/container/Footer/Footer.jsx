@@ -21,6 +21,7 @@ const Footer = () => {
         method="POST"
         data-netlify="true"
         onSubmit="submit"
+        netlify-honeypot="bot-field"
         >
         <input type="hidden" name="form-name" value="contact"/>
         <input className="hover"  type="text" placeholder="Your Name" name="name" />
