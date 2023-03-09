@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { BsGithub, BsInstagram, BsLinkedin} from 'react-icons/bs';
 
@@ -8,6 +8,25 @@ import { Map} from '../../components';
 import './Footer.scss';
 
 const Footer = () => {
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => alert("Thank you for your submission"))
+      .catch((error) => alert(error));
+  };
+  
+  document
+    .querySelector("form")
+    .addEventListener("submit", handleSubmit);
   
 
   return (
@@ -21,14 +40,16 @@ const Footer = () => {
         data-netlify="true"
         method="POST"
         netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
         >
         <input type="hidden" name="form-name" value="contact"/>
-        <input className="hover"  type="text" placeholder="Your Name" name="name" />
-        <input className="hover" type="email" placeholder="Your Email" name="email"   />
+        <input className="hover"  type="text" placeholder="Your Name" name="name" required />
+        <input className="hover" type="email" placeholder="Your Email" name="email" required  />
         <textarea
               className="hover"
               placeholder="Your Message"
               name="message"
+              required
               
             />
             <motion.button
@@ -50,12 +71,6 @@ const Footer = () => {
         </footer>
     </div>
     </div>
-     
-       
-
-        
-      
-
       
     </>
    
