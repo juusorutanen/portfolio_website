@@ -18,9 +18,8 @@ const Footer = () => {
       <div className="app__footer">
         <form 
         name="contact"
-        method="POST"
         data-netlify="true"
-        onSubmit="submit"
+        method="POST"
         netlify-honeypot="bot-field"
         >
         <input type="hidden" name="form-name" value="contact"/>
