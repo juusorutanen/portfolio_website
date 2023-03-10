@@ -20,9 +20,12 @@ const Footer = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => alert("Thank you for your submission"))
+      .then(() => alert("Thank you!"))
+      
       .catch((error) => alert(error));
   };
+
+  
   
   document
     .querySelector("form")
@@ -56,6 +59,7 @@ const Footer = () => {
           whileHover={{scale:1.1}}
           whileTap={{ scale: 0.9}}
           type="submit" className="app__anchor-tag" >Send Message</motion.button>
+          
         </form>
         
         <div className="app__map">
