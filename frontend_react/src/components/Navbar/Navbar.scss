@@ -8,8 +8,6 @@
     padding: 1rem 2rem;
     border-bottom: solid rgba(247, 243, 243, 0.5);
     background-color: themed("bg");
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     position: fixed;
     z-index: 4;
 }

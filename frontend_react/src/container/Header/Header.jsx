@@ -17,9 +17,7 @@ const Header = () => {
         <h2 className="app__header-text-smaller">An aspiring <span>Front-end Developer.</span></h2>
         <p className="app__header-text-paragraph">I'm a recent Business Information Technology graduate and my passion is programming. Currently I'm seeking for any vacant trainee/junior roles in the field of software/web development. 
         </p>
-        <p className="app__header-text-paragraph">Please note that this website is currently <span> unfinished</span> and will be continously updated.</p>
         <a className='app__anchor-tag' href="#about">More about me </a>
-          
           </div>
       <div 
       className='app__person'>

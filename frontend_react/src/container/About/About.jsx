@@ -14,7 +14,7 @@ const About = () => {
       <div className='app__about-text-container'>
         <h1 className="app__head-text">ABOUT ME</h1>
         <p className="app__about-text-paragraph">I have a background working in customer service which has given me a customer-oriented approach and excellent problem-solving skills. 
-        <span> In my spare time I enjoy building websites/apps and generally improve my web development skills. </span>
+        <span>In my spare time I enjoy building websites/apps and generally improve my web development skills. </span>
         Ultimately, I’m a developer because I am always excited to learn. I’d love the opportunity to apply my knowledge in a professional setting and learn from others. 
         When I'm not learning I enjoy playing videogames, photography, and throwing frisbees into small cages (mostly trees). </p>
           </div>
