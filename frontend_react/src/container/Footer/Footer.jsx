@@ -34,7 +34,6 @@ const Footer = () => {
 
   return (
     <>
-    
       <div className='app__footer-wrapper'>
       <h1 className="app__head-text">CONNECT WITH ME</h1>
       <div className="app__footer">
@@ -82,6 +81,6 @@ const Footer = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Footer, 'app__footer'),
+  MotionWrap(Footer, 'app__footer-wrapper'),
   'contact',
 );

@@ -1,7 +1,5 @@
 @import "../../App.scss";
 
-
-
 .app__about {
     @include themify($themes) {
     padding: 0 10px 0 10px;
@@ -17,6 +15,10 @@
         width: 100%;
         flex-wrap: wrap;
         gap:5px; 
+    }
+
+    svg {
+        color: var(--green-primary);
     }
 }
 }
