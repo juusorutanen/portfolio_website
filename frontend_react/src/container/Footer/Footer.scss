@@ -2,27 +2,26 @@
 
 .app__footer-wrapper{
   width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .app__footer {
   display: flex;
   margin: 20px 0 10px;
+  padding: 30px 70px 0 70px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    gap:50px;
+    gap:100px;
     text-align: center;
-    
+    padding: 0;
 }
 }
-
-
 
 form {
   width: 100%;
 }
-
-
 
 .app__map {
   width: 100%;
@@ -37,27 +36,43 @@ form {
         padding: 0.95rem;
         margin-bottom: 1rem;
         margin-top: 5px;
-        border: none;
+        border: solid #222;
         border-radius: 7px;
         background-color: var(--primary-color);
   
         font-family: var(--font-base);
         color: white;
         outline: none;
+
+        &:focus {
+          border-left: 5px solid #118a53,
       }
+    }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: rgb(211,211,211) !important;
+}
+
+::placeholder {
+  color:lightgray;
+}
+  
+      
       
       textarea {
         height: 150px;
         resize: none;
       }
-  
-     
-      
-     
+      // Mobile Styles //     
       .app__footer-mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
         
         @media screen and (min-width: 768px) {
           display: none;
@@ -73,8 +88,6 @@ form {
       gap:40px;
       margin-bottom: 1rem;
               
-        
-    
         svg { @include themify($themes) {
             color: themed("color");
         }     
@@ -84,26 +97,4 @@ form {
   .app__anchor-tag {
     font-family: var(--font-base);
   }
-
-  .message{
-    width: 100%;
-    position: relative;
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: center;
-}
-.message .success{
-    font-size: 20px;
-    color: green;
-    position: absolute;
-    animation: buttons .3s linear;
-    display: none;
-}
-.message .danger{
-    font-size: 20px;
-    color: red;
-    position: absolute;
-    transition: .3s;
-    animation: buttons .3s linear;
-    display: none;
-}
+  
