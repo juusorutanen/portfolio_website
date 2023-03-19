@@ -10,18 +10,16 @@ $themes: (
     whiteGreen: #0acc74,
     color: #000,
     hover: #0acc74
-    
   ),
   dark: (
     textColor: black,
-    bg: #222,
+    bg: #111,
     button: white,
     bgSoft: #333,
     textColorSoft: #118a53,
     whiteGreen: whitesmoke,
     color: whitesmoke,
     hover: #0acc74,
-    
   ),
 );
 
@@ -90,10 +88,13 @@ $themes: (
     width: 100%;
     flex-direction: column;
     padding: 4rem 2rem;
+    justify-content: flex-start;
+    margin-top:30px;
     
   
     @media screen and (max-width: 450px) {
       padding: 5rem 2rem 4rem 2rem;
+      margin:0;
     }
   }
 
@@ -307,7 +308,7 @@ $themes: (
 
   @media screen and (max-width: 768px) {
   font-size: 0.85rem;
-  padding: 5px;;
+  padding: 5px;
   margin-bottom: 10px;
   background-color: transparent;
   z-index: 3;
