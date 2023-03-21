@@ -1,14 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
+import data from './data';
 
 import { BsFillTreeFill} from 'react-icons/bs';
-
 
 import './About.scss';
 
 
 const About = () => {
+
+  const [showMore, setShoWMore] = useState(false);
+  const { text } = data;
   return (
     <div className='app__about'>
       <div className='app__about-text-container'>
@@ -17,7 +20,13 @@ const About = () => {
         I love helping people and finding solutions to problems. 
         <span>In my spare time I enjoy building websites/apps and generally improve my web development skills. </span>
         Ultimately, I’m a developer because I am always excited to learn. I’d love the opportunity to apply my knowledge in a professional setting and learn from others. 
-        When I'm not learning I enjoy playing videogames, photography, and throwing frisbees into small cages (mostly <BsFillTreeFill/>). </p>
+        When I'm not learning I enjoy playing videogames, photography, and throwing frisbees into small cages (mostly <BsFillTreeFill/>).
+        <br/>
+        {showMore ? text : `${text.substring(250, 250)}`}
+        <button className="read-more-btn" onClick={()=> setShoWMore(!showMore)}>
+          {showMore ? "Read less": "Read more"}
+        </button>
+         </p>
           </div>
 
         <div className='app__skills-container'>

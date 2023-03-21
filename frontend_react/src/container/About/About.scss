@@ -77,3 +77,11 @@
 .app__skills-caption {
     text-align: center;
 }
+
+.read-more-btn {
+    border:none;
+    background-color: transparent;
+    color:var(--green-primary);
+    cursor: pointer;
+    font-family: var(--font-base);
+}
