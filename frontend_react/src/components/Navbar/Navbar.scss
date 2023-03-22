@@ -51,6 +51,8 @@
     cursor: pointer;
 }
 
+
+
 .app__navbar-links {
     display: flex;
     gap: 1.5rem;
@@ -66,8 +68,13 @@
         color: var(--green-primary);
         text-decoration: none;
         font-size: 1rem;
-        font-weight: 100;
+        font-weight: 300;
         transition: all 0.3s ease-in-out;
+
+        a:nth-child(2n + 1) {
+            color:red;
+
+        }
 
         &:hover {
             color: var(--green-secondary);
