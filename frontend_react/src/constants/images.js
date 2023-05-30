@@ -6,7 +6,7 @@ import javascript from '../assets/javascript.png';
 import node from '../assets/node.png';
 import react from '../assets/react.png';
 import sass from '../assets/sass.png';
-import mongodb from '../assets/mongodb.png';
+import mongodb from '../assets/mongo.svg';
 import redux from '../assets/redux.png';
 import photoshop from '../assets/photoshop.png';
 import html5 from '../assets/html5.png';
