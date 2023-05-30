@@ -60,6 +60,14 @@ const About = () => {
             <img className='app__skill-image' src={images.photoshop} alt ="Photoshop"/>
             <figcaption className='app__skills-caption'>Photoshop</figcaption>
           </figure>
+          <figure className='app__skill-wrapper'>
+            <img className='app__skill-image' src={images.mongodb} alt ="Mongodb"/>
+            <figcaption className='app__skills-caption'>Mongodb</figcaption>
+          </figure>
+          <figure className='app__skill-wrapper'>
+            <img className='app__skill-image' src={images.redux} alt ="Redux"/>
+            <figcaption className='app__skills-caption'>Redux</figcaption>
+          </figure>
           </div>
           </div>
     </div>
