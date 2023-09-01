@@ -24,7 +24,7 @@ const About = () => {
         <br/>
         {showMore ? text : `${text.substring(250, 250)}`}
         <button className="read-more-btn" onClick={()=> setShoWMore(!showMore)}>
-          {showMore ? "Read less": "Read more"}
+          {showMore ? "That's enough": "Longer story"}
         </button>
          </p>
           </div>

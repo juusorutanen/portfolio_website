@@ -13,8 +13,8 @@ const Header = () => {
       
       <div className='app__header-text-container'>
         <h1 className="app__header-text">👋 Hi! I'm Juuso.</h1>
-        <h2 className="app__header-text-smaller">An aspiring <span>Web Developer.</span></h2>
-        <p className="app__header-text-paragraph">I'm a recent Business Information Technology graduate and my passion is programming. I love being creative and I never run out of ideas. Currently, I'm seeking for a trainee/junior position in the field of software/web development. 
+        <h2 className="app__header-text-smaller">A <span>Full Stack</span> Developer.</h2>
+        <p className="app__header-text-paragraph">I'm a Business Information Technology graduate with a passion to programming. I love being creative and I never run out of ideas. Currently, I'm seeking for a trainee/junior position in the field of software/web development. 
         </p>
         
         <motion.a 
