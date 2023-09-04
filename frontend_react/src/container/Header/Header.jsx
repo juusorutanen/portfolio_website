@@ -14,8 +14,7 @@ const Header = () => {
       <div className='app__header-text-container'>
         <h1 className="app__header-text">👋 Hi! I'm Juuso.</h1>
         <h2 className="app__header-text-smaller">A <span>Full Stack</span> Developer.</h2>
-        <p className="app__header-text-paragraph">I'm a Business Information Technology graduate with a passion to programming. I love being creative and I never run out of ideas. Currently, I'm seeking for a trainee/junior position in the field of software/web development. 
-        </p>
+        <p className="app__header-text-paragraph">I'm a Business Information Technology graduate with a passion to programming. Looking for an opportunity to apply creative, solution-oriented, and communicative skills on a development team. </p>
         
         <motion.a 
         whileHover={{scale:1.1}}
