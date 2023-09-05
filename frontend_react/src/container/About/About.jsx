@@ -49,6 +49,10 @@ const About = () => {
             <figcaption className='app__skills-caption'>HTML5</figcaption>
           </figure>
           <figure className='app__skill-wrapper'>
+            <img className='app__skill-image' src={images.typescript} alt ="JavaScript"/>
+            <figcaption className='app__skills-caption'>TypeScript</figcaption>
+          </figure>
+          <figure className='app__skill-wrapper'>
             <img className='app__skill-image' src={images.git} alt ="Git"/>
             <figcaption className='app__skills-caption'>Git</figcaption>
           </figure>
