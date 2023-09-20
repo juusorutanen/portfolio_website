@@ -45,7 +45,7 @@ const Projects = () => {
   <h1 className="app__head-text">PROJECTS &#40;REGULAR UPDATES&#41;</h1>
 
   <div className="app__work-filter">
-        {['All','Fullstack', 'Web App', 'Frontend', 'ReactJS'].map((item, index) => (
+        {['All','Fullstack', 'Frontend', 'Next.js', 'React'].map((item, index) => (
           <button
             key={index}
             onClick={() => handleWorkFilter(item)}
