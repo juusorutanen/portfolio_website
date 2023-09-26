@@ -1,5 +1,13 @@
 ## Portfolio website
 
-This website was a learning project for me as it was my first time using React.js, Sanity, Framer Motion and SCSS. I'm continously updating the website and making changes and polishing the code. 
+This website was created with React.js, Sanity, Framer Motion for animations and SCSS. The website's project section gets data from Sanity's CMS. Darkmode was implemented with createContext. The map in the contact section was implemented by using React simple maps library. 
 
-Learned a lot about how React works, how to connect CMS to Frontend, how to use Netlify, and overall about CSS, JavaScript and HTML. 
+Learned a lot about how React works and how to think in React, how to connect CMS to Frontend, how to use Netlify and Netlify Forms, and overall about CSS/Scss, JavaScript and HTML. 
+
+Technologies Used
+[React]
+[JavaScript]
+[Scss]
+[FramerMotion]
+[Sanity]
+[Netlify]
