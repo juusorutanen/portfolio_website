@@ -1,10 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BsGithub, BsInstagram, BsLinkedin} from 'react-icons/bs';
-
-
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { Map} from '../../components';
+import { Map } from '../../components';
 import './Footer.scss';
 
 const Footer = () => {
@@ -21,17 +19,13 @@ const Footer = () => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => alert("Thank you!"))
-      
       .catch((error) => alert(error));
   };
 
-  
-  
   document
     .querySelector("form")
     .addEventListener("submit", handleSubmit);
   
-
   return (
     <>
       <div className='app__footer-wrapper'>
@@ -60,7 +54,6 @@ const Footer = () => {
           type="submit" className="app__anchor-tag" >Send Message</motion.button>
           
         </form>
-        
         <div className="app__map">
         <Map/>
         </div>
@@ -74,9 +67,7 @@ const Footer = () => {
         </footer>
     </div>
     </div>
-      
     </>
-   
   );
 };
 

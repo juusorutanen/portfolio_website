@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const RightBar = () => {
     return (
         <div className='app__rightbar'>

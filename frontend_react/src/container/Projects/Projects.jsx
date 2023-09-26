@@ -3,8 +3,6 @@ import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { animate, motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
-
-
 import './Projects.scss';
 
 
@@ -19,7 +17,6 @@ const Projects = () => {
 
   useEffect(() => {
     const query = '*[_type == "works"]';
-
     client.fetch(query).then((data) => {
       setWorks(data);
       setFilterWork(data);
@@ -32,7 +29,6 @@ const Projects = () => {
 
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
-
       if (item === 'All') {
         setFilterWork(works);
       } else {
@@ -60,7 +56,6 @@ const Projects = () => {
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5}}
         className="app__work-portfolio"
-
         >
           {filterWork.map((work,index) => (
             <div className='app__work-item ' type="button" key={index}>
@@ -83,7 +78,6 @@ const Projects = () => {
 
                   </motion.div>
                   </a>
-
                   <a href={work.codeLink} target="_blank" rel='noreferrer'>
                   <motion.div
                   whileInView={{scale: [0, 1]}}
@@ -92,7 +86,6 @@ const Projects = () => {
                   className="app__flex"
                   >
                     <AiFillGithub />
-
                   </motion.div>
                   </a>
                 </motion.div>
@@ -101,20 +94,13 @@ const Projects = () => {
               <div className='app__work-content app__flex'>
                 <h4 className='bold-text'>{work.title}</h4>
                 <p className='p-text' style= {{marginTop:10}}>{work.description}</p>
-
                 <div className='app__work-tag app__flex'>
                   <p className='p-text'>{work.tags[0]}</p>
                 </div>
               </div>
-
               </div>
-
-            
           ))}
-
       </motion.div>
-
-
     </>
   )
 }
