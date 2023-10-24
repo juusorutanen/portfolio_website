@@ -45,7 +45,7 @@ form {
         outline: none;
 
         &:focus {
-          border-left: 5px solid #118a53,
+          border-left: 5px solid #118a53;
       }
     }
 
@@ -61,8 +61,6 @@ input:-webkit-autofill:active {
   color:lightgray;
 }
   
-      
-      
       textarea {
         height: 150px;
         resize: none;
