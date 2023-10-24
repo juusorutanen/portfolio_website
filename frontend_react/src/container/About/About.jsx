@@ -2,9 +2,7 @@ import React, {useState} from 'react'
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import data from './data';
-
 import { BsFillTreeFill} from 'react-icons/bs';
-
 import './About.scss';
 
 

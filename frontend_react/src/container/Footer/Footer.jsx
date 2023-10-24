@@ -39,14 +39,12 @@ const Footer = () => {
         onSubmit={handleSubmit}
         >
         <input type="hidden" name="form-name" value="contact"/>
-        <input className="hover"  type="text" placeholder="Your Name" name="name" required />
-        <input className="hover" type="email" placeholder="Your Email" name="email" required  />
+        <input type="text" placeholder="Your Name" name="name" required />
+        <input type="email" placeholder="Your Email" name="email" required  />
         <textarea
-              className="hover"
               placeholder="Your Message"
               name="message"
               required
-              
             />
             <motion.button
           whileHover={{scale:1.1}}
