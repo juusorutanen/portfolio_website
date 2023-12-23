@@ -17,8 +17,7 @@ const About = () => {
         <p className="app__about-text-paragraph">I have a background working in customer service which has given me a customer-oriented approach and excellent problem-solving skills.
         I love helping people and finding solutions to problems. 
         <span>In my spare time I enjoy building websites/apps and stay up-to-date with the latest industry trends. </span>
-        Ultimately, I’m a developer because I am always excited to learn. I’d love the opportunity to apply my knowledge in a professional setting and learn from others. 
-        When I'm not learning I enjoy playing videogames, photography, and throwing frisbees into small cages (mostly <BsFillTreeFill/>).
+        Ultimately, I’m a developer because I am always excited to learn. When I'm not learning I enjoy playing videogames, photography, and throwing frisbees into small cages (mostly <BsFillTreeFill/>).
         <br/>
         {showMore ? text : `${text.substring(250, 250)}`}
         <button className="read-more-btn" onClick={()=> setShoWMore(!showMore)}>
@@ -53,6 +52,10 @@ const About = () => {
           <figure className='app__skill-wrapper'>
             <img className='app__skill-image' src={images.git} alt ="Git"/>
             <figcaption className='app__skills-caption'>Git</figcaption>
+          </figure>
+          <figure className='app__skill-wrapper'>
+            <img className='app__skill-image' src={images.nextjs} alt ="Nextjs"/>
+            <figcaption className='app__skills-caption'>Next.js</figcaption>
           </figure>
           <figure className='app__skill-wrapper'>
             <img className='app__skill-image' src={images.sass} alt ="Sass"/>

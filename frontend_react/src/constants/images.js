@@ -3,6 +3,7 @@ import figma from '../assets/figma.png';
 import git from '../assets/git.png';
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
+import nextjs from '../assets/nextjs.png';
 import typescript from '../assets/typescript.png';
 import node from '../assets/node.png';
 import react from '../assets/react.png';
@@ -35,5 +36,6 @@ export default {
   circle,
   logo,
   photoshop,
-  mongodb
+  mongodb,
+  nextjs
 };

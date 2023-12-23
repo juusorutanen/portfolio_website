@@ -240,14 +240,7 @@ $themes: (
     }
   }
 }
-
-
-
-
-  
-
   .app__rightbar {
-
     @include themify ($themes) {
     display: flex;
     justify-content: center;
@@ -286,14 +279,6 @@ $themes: (
     }
   }
 }
-
-
-
-  
-
-  
-  
-  
 
   .app__button-primary {
     color: white;
