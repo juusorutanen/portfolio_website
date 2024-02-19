@@ -10,7 +10,7 @@ const Header = () => {
     <div className='app__flex app__header-container'>
       <div className='app__header-text-container'>
         <h1 className="app__header-text">👋 Hi! I'm Juuso.</h1>
-        <h2 className="app__header-text-smaller">A <span>Software</span> Developer.</h2>
+        <h2 className="app__header-text-smaller">A <span>Frontend</span> Developer.</h2>
         <p className="app__header-text-paragraph">I'm a Business Information Technology graduate with a strong enthusiasm for programming. Looking for an opportunity to apply creative, solution-oriented, and communicative skills on a development team. </p>
         
         <motion.a 
