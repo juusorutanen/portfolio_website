@@ -1,6 +1,6 @@
 @import "../../App.scss";
 .app__navbar {
-    @include themify ($themes) {
+  @include themify($themes) {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -9,81 +9,83 @@
     background-color: themed("bg");
     position: fixed;
     z-index: 4;
-}
+  }
 }
 
 .app__navbar-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    img {
+  img {
     height: 30px;
 
     @media screen and (max-width: 768px) {
-        height: 20px;
-         
-       }
+      height: 20px;
     }
-    
+  }
 }
 .container {
-    display: flex;
-    gap:1rem;
+  display: flex;
+  gap: 1rem;
 }
 .darkMode {
-  
-      
   display: flex;
-  justify-content: center;   
+  justify-content: center;
   align-items: center;
-
 }
 
-
-.darkModeOff{
-    color: var(--green-primary);
-    cursor: pointer;
+.darkModeOff {
+  color: var(--green-primary);
+  cursor: pointer;
+  &:hover {
+    color: yellow;
+  }
 }
 
 .darkModeOn {
-    color: black;
-    cursor: pointer;
+  color: black;
+  cursor: pointer;
 }
-
-
 
 .app__navbar-links {
-    display: flex;
-    gap: 1.5rem;
-    
-    @media screen and (max-width: 768px) {
-       gap:0.5rem;
-    }
+  display: flex;
+  gap: 1.5rem;
 
-    li {
-        cursor: pointer;
+  @media screen and (max-width: 768px) {
+    gap: 0.5rem;
+  }
 
+  li {
+    cursor: pointer;
     a {
-        color: var(--green-primary);
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 300;
-        transition: all 0.3s ease-in-out;
+      color: var(--green-primary);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 300;
+      transition: all 0.3s ease-in-out;
+      position: relative;
 
-        a:nth-child(2n + 1) {
-            color:red;
-
-        }
-
-        &:hover {
-            color: var(--green-secondary);
-        }
-        @media screen and (max-width: 768px) {
-            font-size: 0.6rem;
-        }
+      &:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: var(--green-secondary);
+        width: 0;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+      }
+      &:hover {
+        color: var(--green-secondary);
+      }
+      &:hover::after {
+        width: 100%;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 0.6rem;
+      }
     }
-    }
+  }
 }
-
-
