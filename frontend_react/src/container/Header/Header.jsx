@@ -7,7 +7,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 
 const Header = () => {
   return (
-    <div className='app__flex app__header-container'>
+    <header className='app__flex app__header-container'>
       <div className='app__header-text-container'>
         <h1 className="app__header-text">👋 Hi! I'm Juuso.</h1>
         <h2 className="app__header-text-smaller">A <span>Frontend</span> Developer.</h2>
@@ -24,7 +24,7 @@ const Header = () => {
           <img className='app__person-img' src={images.juusoprofilephoto} alt ="Juuso Rutanen Profile"/>
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 
