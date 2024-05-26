@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
         <div className="app__navbar-logo">
-        <a href="#home">
+        <a href="#home" aria-label="Go to homepage">
             <img src={images.logo} className="logo" alt ="logo" />
             </a>
         </div>
